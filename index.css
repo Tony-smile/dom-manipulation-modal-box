@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   max-width: 100%;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgb(75, 230, 87), rgb(15, 124, 5));
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-content: center;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin: 5em auto;
+
+}
+.show_modal{
+    cursor: pointer;
+    padding:1.1em 3.5em;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(25, 180, 11);
+    font-size: 1em;
+    font-weight: bold;
+    color: azure;
+    box-shadow:  inset -1px -1px 16px rgba(0, 255, 0, 0.801),
+                    0px 1px 6px 5px rgb(138, 28, 28);
+}
+.hidden {
+    display: none;
+
+}
+p{
+    margin-top: 1em;
+}
+.modal {
+position: absolute;
+top: 30%;
+left: 15%;
+
+transform: translate (-50%, -50%); 
+width: 70%;
+
+background-color: white;
+
+padding: 3rem 6rem;
+
+border-radius: 5px;
+
+box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+
+z-index: 10;
+
+}
+.close-modal{
+    position: absolute;
+    top: 5%;
+    padding: .8em 1.1em;
+    left: 90%;
+    font-weight: bolder;
+    font-size:1rem;
+    border: 1px solid rgb(37, 206, 45);
+    border-radius: 2px;
+    cursor: pointer;
+    position: absolute;
+    transform: translate (-50%, -0%); 
+}
+
+
+.overlay {
+background-color: rgb(0, 0, 0, 0.5);
+position: absolute;
+backdrop-filter: blur(3px);
+top: 0;
+
+left: 0;
+
+width: 100%;
+height: 100%;
+}
+
